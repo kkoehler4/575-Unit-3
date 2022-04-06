@@ -18,3 +18,16 @@
     font-size: 1.5em;
     font-weight: bold;
 }
+
+/*Example 2.9*/
+.map {
+    border: medium solid #479E6B;
+}
+
+/*Example 2.4*/
+
+.vermontDistricts {
+    fill: #479E6B;
+    stroke: #fff;
+    stroke-width: 1px;
+}
