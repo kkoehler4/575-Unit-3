@@ -1,54 +1,54 @@
-﻿SUPERNAME,boys,girls,lunch_eligible,not_lunch_eligible ,public_prek,not_public_prek
-Addison Central SU,54.17,93.75,60,80.43,71.43,92.86
-Addison Northwest SU,95.38,94,91.67,95.6,93.33,100
-Addison Rutland SU,nodata,nodata,nodata,nodata,nodata,nodata
-Barre SU,75,91.38,73.53,85.87,84.55,68.75
-Battenkill Valley SU,75,92.86,66.67,94.12,83.33,100
-Bennington Rutland SU,84.21,90,76,92.45,84.85,100
-Burlington SD,68.63,82.95,67.61,79.83,79.39,66.1
-Caledonia Cooperative SD,86.96,95.12,90.48,90.91,90.91,90
-Central Vermont SU,58.62,83.33,57.89,78.26,74.07,63.64
-Champlain Valley SU,95.38,87.37,81.25,92.82,93.01,87.18
-Chittenden East SU,nodata,nodata,nodata,nodata,nodata,nodata
-Colchester SD,74.42,95.12,44.44,89.33,91.53,68
-Essex North SU,33.33,100,100,60,80,0
-Essex Westford SU,83.7,97.3,90,91.19,90.91,92.11
-Franklin Northeast SU,83.61,88.52,83.64,88.06,85.32,92.31
-Franklin Northwest SU,nodata,nodata,nodata,nodata,nodata,nodata
-Franklin West SU,83.54,95.92,69.23,90.43,87.39,100
-Grand Isle SU,88,92.86,91.67,90.24,95.56,62.5
-Greater Rutland County SU,82.46,89.29,73.08,89.66,88.66,68.75
-Hartford SD,61.11,81.58,64.29,73.33,66.04,85.71
-Harwood SU,90,94.92,80,94.68,92.16,100
-Kingdom East SU,64,84.78,68.97,76.12,73.17,78.57
-Lamoille North SU,84.44,92,89.47,88.16,88.75,88.67
-Lamoille South SU,84.78,96.55,92.86,88.52,90.48,83.33
-Maple Run SU,85.94,94.29,83.87,92.23,92.44,73.33
-Mill River SU,nodata,nodata,nodata,nodata,nodata,nodata
-Milton SD,88.89,91.18,78.57,92.86,89.23,100
-Montpelier-Roxbury SU,93.33,100,75,100,96.36,100
-Mt. Abraham USD,66.67,82.35,50,76.67,78.57,50
-North Country SU,78.22,80.88,72.73,84.78,78.47,84
-Norwich SD,nodata,nodata,nodata,nodata,nodata,nodata
-Orange East SU,77.27,95.83,78.26,86.67,88,72.22
-Orange Southwest SU,85,88.24,77.78,88.89,86.84,87.5
-Orleans Central SU,76.92,93.33,83.33,88.46,84.44,90.91
-Orleans Southwest SU,96,86.96,86.67,93.94,88.89,100
-Rivendell SU,nodata,nodata,nodata,nodata,nodata,nodata
-Rutland City SD,67.19,86.21,60.71,80.85,69.44,86
-Rutland Northeast SU,80.39,89.58,80.77,86.3,87.01,77.27
-South Burlington SD,93.55,97.06,72.72,97.65,93.51,100
-Southwest Vermont SU,73.17,80.25,67.06,87.18,80.49,65
-Springfield SD,70.21,89.19,84.09,72.5,88.89,47.62
-St. Johnsbury SD,92.31,92.31,100,81.82,100,66.67
-Two Rivers SU,83.33,94.12,66.67,96.15,87.1,100
-Washington Central SU,97.22,90,91.67,94.44,96.49,77.78
-Washington Northeast SU,nodata,nodata,nodata,nodata,nodata,nodata
-White River Valley SU,86.84,85.71,70.59,91.84,85,100
-Windham Central SU,95.24,100,85.71,100,100,66.67
-Windham Northeast SU,84.62,90.48,78.57,89.13,88.89,80
-Windham Southeast SU,86.15,93.02,80,91.6,91.41,82.61
-Windham Southwest SU,94.74,93.33,88.89,96,96.3,85.71
-Windsor Central SU,97.14,100,100,98,97.87,100
-Windsor Southeast SU,93.18,96.43,100,94.03,94,95.45
-Winooski SD,75,86.96,81.25,79.07,82.61,69.23
+SUPERNAME,boys,girls,lunch_eligible,not_lunch_eligible ,public_prek,not_public_prek
+Addison_Central_SU,54.17,93.75,60,80.43,71.43,92.86
+Addison_Northwest_SU,95.38,94,91.67,95.6,93.33,100
+Addison_Rutland_SU,nodata,nodata,nodata,nodata,nodata,nodata
+Barre_SU,75,91.38,73.53,85.87,84.55,68.75
+Battenkill_Valley_SU,75,92.86,66.67,94.12,83.33,100
+Bennington_Rutland_SU,84.21,90,76,92.45,84.85,100
+Burlington_SD,68.63,82.95,67.61,79.83,79.39,66.1
+Caledonia_Cooperative_SD,86.96,95.12,90.48,90.91,90.91,90
+Central_Vermont_SU,58.62,83.33,57.89,78.26,74.07,63.64
+Champlain_Valley_SU,95.38,87.37,81.25,92.82,93.01,87.18
+Chittenden_East_SU,nodata,nodata,nodata,nodata,nodata,nodata
+Colchester_SD,74.42,95.12,44.44,89.33,91.53,68
+Essex_North_SU,33.33,100,100,60,80,0
+Essex_Westford_SU,83.7,97.3,90,91.19,90.91,92.11
+Franklin_Northeast_SU,83.61,88.52,83.64,88.06,85.32,92.31
+Franklin_Northwest_SU,nodata,nodata,nodata,nodata,nodata,nodata
+Franklin_West_SU,83.54,95.92,69.23,90.43,87.39,100
+Grand_Isle_SU,88,92.86,91.67,90.24,95.56,62.5
+Greater_Rutland_County_SU,82.46,89.29,73.08,89.66,88.66,68.75
+Hartford_SD,61.11,81.58,64.29,73.33,66.04,85.71
+Harwood_SU,90,94.92,80,94.68,92.16,100
+Kingdom_East_SU,64,84.78,68.97,76.12,73.17,78.57
+Lamoille_North_SU,84.44,92,89.47,88.16,88.75,88.67
+Lamoille_South_SU,84.78,96.55,92.86,88.52,90.48,83.33
+Maple_Run_SU,85.94,94.29,83.87,92.23,92.44,73.33
+Mill_River_SU,nodata,nodata,nodata,nodata,nodata,nodata
+Milton_SD,88.89,91.18,78.57,92.86,89.23,100
+Montpelier_Roxbury_SU,93.33,100,75,100,96.36,100
+Mt_Abraham_USD,66.67,82.35,50,76.67,78.57,50
+North_Country_SU,78.22,80.88,72.73,84.78,78.47,84
+Norwich_SD,nodata,nodata,nodata,nodata,nodata,nodata
+Orange_East_SU,77.27,95.83,78.26,86.67,88,72.22
+Orange_Southwest_SU,85,88.24,77.78,88.89,86.84,87.5
+Orleans_Central_SU,76.92,93.33,83.33,88.46,84.44,90.91
+Orleans_Southwest_SU,96,86.96,86.67,93.94,88.89,100
+Rivendell_SU,nodata,nodata,nodata,nodata,nodata,nodata
+Rutland_City_SD,67.19,86.21,60.71,80.85,69.44,86
+Rutland_Northeast_SU,80.39,89.58,80.77,86.3,87.01,77.27
+South_Burlington_SD,93.55,97.06,72.72,97.65,93.51,100
+Southwest_Vermont_SU,73.17,80.25,67.06,87.18,80.49,65
+Springfield_SD,70.21,89.19,84.09,72.5,88.89,47.62
+St_Johnsbury_SD,92.31,92.31,100,81.82,100,66.67
+Two_Rivers_SU,83.33,94.12,66.67,96.15,87.1,100
+Washington_Central_SU,97.22,90,91.67,94.44,96.49,77.78
+Washington_Northeast_SU,nodata,nodata,nodata,nodata,nodata,nodata
+White_River_Valley_SU,86.84,85.71,70.59,91.84,85,100
+Windham_Central_SU,95.24,100,85.71,100,100,66.67
+Windham_Northeast_SU,84.62,90.48,78.57,89.13,88.89,80
+Windham_Southeast_SU,86.15,93.02,80,91.6,91.41,82.61
+Windham_Southwest_SU,94.74,93.33,88.89,96,96.3,85.71
+Windsor_Central_SU,97.14,100,100,98,97.87,100
+Windsor_Southeast_SU,93.18,96.43,100,94.03,94,95.45
+Winooski_SD,75,86.96,81.25,79.07,82.61,69.23

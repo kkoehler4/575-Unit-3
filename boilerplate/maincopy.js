@@ -2,7 +2,7 @@
 (function(){
 
     //pseudo-global variables
-    var attrArray = [ "boys", "girls", "lunch_eligible", "not_lunch_eligible", "public_prek", "not_public_prek"]; //list of attributes
+    var attrArray = ["boys", "girls", "lunch_eligible", "not_lunch_eligible", "public_prek", "not_public_prek"]; //list of attributes
     var expressed = attrArray[0]; //initial attribute
     
     //begin script when window loads
@@ -37,6 +37,7 @@
         var promises = [
             d3.csv("data/School_Districts.csv"),
             d3.json("data/schooldistricts.topojson")
+        // d3.json("data/states.topojson")
         ]
 
         Promise.all(promises).then(callback);
@@ -52,7 +53,7 @@
             schoolDistrictsNew = joinData(schoolDistrictsNew, csvData);
 
             //create the color scale
-            var colorScale = makeColorScale2(csvData);
+            var colorScale = makeColorScale(csvData);
 
 	        setEnumerationUnits(schoolDistrictsNew,map,path,colorScale);
 
@@ -92,18 +93,17 @@
             return schoolDistrictsNew;
     }
 
-//function to create color scale generator
-function makeColorScale2(data){
-    var colorClasses = [
-        "#f6eff7",
-        "#bdc9e1",
-        "#67a9cf",
-        "#1c9099",
-        "#016c59"
-    ];
+    function makeColorScale(data){
+		var colorClasses = [
+	        "#f6eff7",
+	        "#bdc9e1",
+	        "#67a9cf",
+	        "#1c9099",
+	        ""
+	    ];
 
     //create color scale generator
-    var colorScale = d3.scaleQuantile()
+    var colorScale = d3.scaleThreshold()
         .range(colorClasses);
 
     //build array of all values of the expressed attribute
@@ -113,12 +113,21 @@ function makeColorScale2(data){
         domainArray.push(val);
     };
 
-    //assign array of expressed values as scale domain
+    //cluster data using ckmeans clustering algorithm to create natural breaks
+    var clusters = ss.ckmeans(domainArray, 5);
+    //reset domain array to cluster minimums
+    domainArray = clusters.map(function(d){
+        return d3.min(d);
+    });
+    //remove first value from domain array to create class breakpoints
+    domainArray.shift();
+
+    //assign array of last 4 cluster minimums as domain
     colorScale.domain(domainArray);
 
     return colorScale;
 };
- 
+
     function setEnumerationUnits(schoolDistrictsNew,map,path,colorScale){
             //add Vermont school districts to map
             var vermontDistricts = map.selectAll(".vermontDistricts")
@@ -140,6 +149,7 @@ function makeColorScale2(data){
 
             //examine the results
             console.log(schoolDistrictsNew);
+    
     }
 
 //function to create coordinated bar chart
@@ -203,7 +213,7 @@ function setChart(csvData, colorScale){
         .attr("x", 40)
         .attr("y", 40)
         .attr("class", "chartTitle")
-        .text("Percent " + attrArray[0] + " 'Ready For Kindergarten'");
+        .text("Percent " + expressed[3] + " 'Ready For Kindergarten'");
 
     //create vertical axis generator
     var yAxis = d3.axisLeft()
@@ -221,28 +231,6 @@ function setChart(csvData, colorScale){
         .attr("width", chartInnerWidth)
         .attr("height", chartInnerHeight)
         .attr("transform", translate);
-};
-
-//function to create a dropdown menu for attribute selection
-function createDropdown(){
-    //add select element
-    var dropdown = d3.select("body")
-        .append("select")
-        .attr("class", "dropdown");
-
-    //add initial option
-    var titleOption = dropdown.append("option")
-        .attr("class", "titleOption")
-        .attr("disabled", "true")
-        .text("Select Attribute");
-
-    //add attribute name options
-    var attrOptions = dropdown.selectAll("attrOptions")
-        .data(attrArray)
-        .enter()
-        .append("option")
-        .attr("value", function(d){ return d })
-        .text(function(d){ return d });
 };
 
 })();
