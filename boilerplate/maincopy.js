@@ -21,8 +21,7 @@
             .append("svg")
             .attr("class", "map")
             .attr("width", width)
-            .attr("height", height);
-
+            .attr("height", height); 
 
         //create Albers equal area conic projection centered on Vermont
         var projection = d3.geoAlbers()

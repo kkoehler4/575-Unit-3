@@ -19,11 +19,6 @@
     font-weight: bold;
 }
 
-/*Example 2.9*/
-.map {
-    border: medium solid #CCCCCC;
-}
-
 /*Example 2.4*/
 
 .vermontDistricts {
@@ -32,16 +27,18 @@
     stroke-linecap: round;
 }
 
+/*
 .map {
     border: medium solid #999;
     margin: 10px 0 0 20px;
 }
+*/
 
 .chart {
     background-color:white;
-    border: medium solid #999;
     float: right;
     margin: 10px 20px 0 0;
+    padding-top: 100px;
 }
 
 .chartTitle {
@@ -57,7 +54,6 @@
 
 .chartFrame {
     fill: none;
-    stroke: #999;
     stroke-width: 1px;
     shape-rendering: crispEdges;
 }
@@ -78,10 +74,10 @@
 
 .dropdown {
     position: absolute;
-    top: 30px;
-    left: 40px;
+    top: 325px;
+    left: 60px;
     z-index: 10;
-    font-family: sans-serif;
+    font-family: 'EB Garamond', serif;
     font-size: 1em;
     font-weight: bold;
     padding: 2px;
@@ -89,6 +85,60 @@
     box-shadow: 2px 2px 4px #999;
 }
 
-option {
+.option {
     font-weight: normal;
 }
+
+.title {
+        font-family: 'Shippori Antique B1', sans-serif;
+        font-size: 30px;
+        color: #000;
+}
+
+.title2 {
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-size: 25px;
+    color: #000;
+}
+
+.description{
+        font-family: 'EB Garamond', serif;
+        font-size: 20px;
+        color: #417067;
+        width: 750px;
+        padding-left: 350px
+
+} 
+
+.infolabel {
+    position: absolute;
+    height: 50px;
+    min-width: 100px;
+    color: #fff;
+    background-color: #000;
+    border: solid thin #fff;
+    padding: 5px 10px;
+}
+
+.infolabel h1 {
+    margin: 0 20px 0 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 1em;
+}
+
+/*Example 2.11*/
+
+.infolabel {
+    margin: 0 20px 0 0;
+    position: absolute;
+    height: 50px;
+    min-width: 100px;
+    color: #fff;
+    background-color: #000;
+    border: solid thin #fff;
+    padding: 5px 10px;
+    top: -75px;
+}
+
+    
