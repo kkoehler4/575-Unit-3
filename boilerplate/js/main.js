@@ -144,7 +144,7 @@ function makeColorScale(data){
                 .enter()
                 .append("path")
                 .attr("class", function(d){
-                    return "vermontDistricts";
+                    return "vermontDistricts " + d.properties.SUPERNAME;
                 })
                 .attr("d", path)
                 .style("fill", function(d){
@@ -165,7 +165,7 @@ function makeColorScale(data){
                                  
         //below Example 2.2 line 16...add style descriptor to each path
         var desc = vermontDistricts.append("desc")
-        .text('{"stroke": "#000", "stroke-width": "0.5px"}');
+        .text('{"stroke": "grey", "stroke-width": "0.5px"}');
     }
 
 //function to create coordinated bar chart
@@ -213,7 +213,7 @@ function setChart(csvData, colorScale){
             highlight(d);
         })
         .on("mouseout", function (event, d) {
-            dehighlight(d.properties);
+            dehighlight(d);
         })
         .on("mousemove", moveLabel);  
 
@@ -355,7 +355,7 @@ function updateChart(bars, n, colorScale) {
     }
 
     //function to reset the element style on mouseout
-    function dehighlight() {
+    function dehighlight(props) {
         var selected = d3
             .selectAll("." + props.SUPERNAME)
             .style("stroke", function () {
