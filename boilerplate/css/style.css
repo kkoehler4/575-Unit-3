@@ -69,7 +69,7 @@
 
 .dropdown {
     position: absolute;
-    top: 575px;
+    top: 590px;
     left: 60px;
     z-index: 10;
     font-family: 'EB Garamond', serif;
@@ -128,7 +128,6 @@
 /*Example 2.11*/
 
 .infolabel {
-
     position: absolute;
     height: 90px;
     min-width: 100px;
