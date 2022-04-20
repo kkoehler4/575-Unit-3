@@ -28,13 +28,6 @@
     stroke-linecap: round;
 }
 
-/*
-.map {
-    border: medium solid #999;
-    margin: 10px 0 0 20px;
-}
-*/
-
 .chart {
     background-color:white;
     float: right;
@@ -45,7 +38,8 @@
 .chartTitle {
     font-family: 'EB Garamond', serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
+    width: 200px
 }
 
 .chartBackground {
@@ -119,7 +113,6 @@
 
 .infolabel h3 {
     text-align: center;
-    display: inline-block;
     font-size: 15px;
     color: #000;
     font-family: 'EB Garamond', serif;
@@ -129,7 +122,6 @@
 .infolabel h1 {
     text-align: center;
     padding: 10;
-    display: inline-block;
     font-size: 25px;
 }
 
@@ -163,5 +155,14 @@
 
 .string{
     padding-left: 300px;
+}
+
+.clarification{
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+    color: #417067;
+    width: 750px;
+    padding-left: 350px;
+    padding-top: 10px;
 }
 

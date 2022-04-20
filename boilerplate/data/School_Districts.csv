@@ -1,4 +1,4 @@
-SUPERNAME,boys,girls,lunch_eligible,not_lunch_eligible,public_prek,not_public_prek
+SUPERNAME,boys,girls,students eligible for free or reduced lunch,students not eligible for free or reduced lunch,students who attended public prek,students who did not attend public prek
 Addison_Central_SU,54.17,93.75,60,80.43,71.43,92.86
 Addison_Northwest_SU,95.38,94,91.67,95.6,93.33,100
 Barre_SU,75,91.38,73.53,85.87,84.55,68.75

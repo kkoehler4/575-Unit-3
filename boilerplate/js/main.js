@@ -2,7 +2,7 @@
 (function(){
 
     //pseudo-global variables
-    var attrArray = [ "boys", "girls", "lunch_eligible", "not_lunch_eligible", "public_prek", "not_public_prek"]; //list of attributes
+    var attrArray = [ "boys", "girls", "students eligible for free or reduced lunch", "students not eligible for free or reduced lunch", "students who attended public prek", "students who did not attend public prek"]; //list of attributes
     var expressed = attrArray[0]; //initial attribute
 
         //chart frame dimensions
@@ -342,7 +342,8 @@ function makeColorScale(data){
         //at the bottom of updateChart()...add text to chart title
         var chartTitle = d3
             .select(".chartTitle")
-            .text("Percentage of " + expressed + " 'Ready for Kindergarten'");
+            .text("% of " + expressed + " 'R4K'");
+            
         }
 
         //function to highlight enumeration units and bars
@@ -380,7 +381,7 @@ function makeColorScale(data){
         //function to create dynamic label
         function setLabel(props){
         //label content
-        var labelAttribute =  "<h3>" + props.SUPERNAME + "</h3>" + "<br>" + "<h1>" + props[expressed] +  " %" + "<br>" +
+        var labelAttribute =  "<h3>" + props.SUPERNAME + "</h3>" + "<h1>" + props[expressed] +  " %" + "<br>" +
             "</h1><b>" + "</b>";
 
         //create info label div
@@ -405,9 +406,11 @@ function makeColorScale(data){
 
         //use coordinates of mousemove event to set label coordinates
         var x1 = event.clientX + 10,
-            y1 = event.clientY - 75,
-            x2 = event.clientX - labelWidth - 10,
-            y2 = event.clientY + 25;
+            y1 = event.clientY + 200,
+            x2 = event.clientX - labelWidth + 10,
+            y2 = event.clientY + 50;
+
+            console.log(y1)
 
         //horizontal label coordinate, testing for overflow
         var x = event.clientX > window.innerWidth - labelWidth - 20 ? x2 : x1; 
