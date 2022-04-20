@@ -381,7 +381,7 @@ function makeColorScale(data){
         //function to create dynamic label
         function setLabel(props){
         //label content
-        var labelAttribute =  "<h3>" + props.SUPERNAME + "</h3>" + "<h1>" + props[expressed] +  " %" + "<br>" +
+        var labelAttribute =  "<h3>" + props.SUPERNAME.replaceAll("_"," ") + "</h3>" + "<h1>" + props[expressed] +  " %" + "<br>" +
             "</h1><b>" + "</b>";
 
         //create info label div
